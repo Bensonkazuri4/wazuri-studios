@@ -1,24 +1,22 @@
-# Wazuri Studios website
+# Wazuri Studios
 
-A responsive React + Vite starter website for Wazuri Studios. Built with a dark charcoal and muted-gold visual identity.
+A complete React + Vite website starter for Wazuri Studios.
 
-## Run locally
-1. Extract this ZIP.
-2. Open the extracted folder in Bolt or your code editor.
+## Included
+- Responsive dark, minimal studio website
+- Home, About, Services, Our Approach and Contact sections
+- Contact enquiry form UI
+- Basic homepage text editor panel (local browser state only)
+- React entry point, Vite config, package manifest and styles
+
+## Run in Bolt.new
+1. Import this ZIP as a project.
+2. Open the Terminal in Bolt.
 3. Run `npm install`.
 4. Run `npm run dev`.
+5. Open the preview.
 
-## Connect the live stream
-1. Copy `.env.example` and rename the copy to `.env`.
-2. Set `VITE_LIVE_STREAM_URL` to your provider's **embed URL**.
-   - YouTube example: `https://www.youtube.com/embed/YOUR_LIVE_VIDEO_ID`
-   - Use the embed URL supplied by your streaming provider, not necessarily the public watch-page URL.
-3. Restart the development server after editing `.env`.
+## Important
+The admin panel included is a front-end editing demonstration. It does not include secure login, database storage, email delivery or a live CMS. Those require a backend and authentication before production use.
 
-The current player is an iframe embed. If your provider supplies an HLS `.m3u8` URL rather than an iframe embed URL, the player should be adapted to use an HLS-compatible video player.
-
-## Before publishing
-- Replace the placeholder email `hello@wazuristudios.com` with your real business email.
-- Confirm the WhatsApp number in `src/main.jsx` (currently set to +254 707 739 621).
-- Add real project images and portfolio examples when available.
-- Connect the contact form or inquiry workflow if you want submissions stored or emailed. The current site uses WhatsApp and email links.
+Update the contact email, phone number and social links in `src/App.jsx` before publishing.
